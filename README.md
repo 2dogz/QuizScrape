@@ -14,6 +14,9 @@ python -m pip install --upgrade pip
 python -m pip install --upgrade bs4
 ```
 
+Find The cookies you need in chrome -> right click -> inspect -> application -> storage -> cookies
+Find The cookies you need in firefox -> right click -> inspect element -> storage -> cookies
+
 ```bash
 python main.py
 #Please enter your logSession Cookie data
@@ -27,6 +30,7 @@ erwTEKUEBf8AK1jbVQL0PWy%7Q31OvRZVeWbhu2zL5llQynwe9xaUh3GZTraIp8IBFlE2u3TmATsdjQh
 #Please enter the url of the quiz
 https://missouri.instructure.com/courses/11111/quizzes/111111/take/questions/1111111
 ```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
