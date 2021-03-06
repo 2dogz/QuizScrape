@@ -63,17 +63,20 @@ for ul in uls:
     hrefs = ul.find_all('a', {'class' : 'no-warning'})
     for href in hrefs:
         link = href['href']
-        link = 'https://missouri.instructure.com/'+link
+        link = 'https://missouri.instructure.com'+link
         print('Getting {} Question {}'.format(link,c))
         text = getPage(link)
         soup = BeautifulSoup(text, "html.parser")
         #READ PAGE - GRAB QUESTION ELEMENT & CREATE NEW PAGE
         x = soup.find('div', {'class' : 'quiz_sortable question_holder'})
         created = created + str(x)
-        with open("Output.html", "w") as text_file:
-            text_file.write("%s" % created)
+        #IF YOU WOULD LIKE TO WRITE TO THE FILE AT EVERY URL
+        #with open("Output.html", "w") as text_file:
+        #    text_file.write("%s" % created)
         c += 1
         time.sleep(5)
     
 created = created + endNewPage
-print(created)
+#IF YOU WOULD LIKE TO WRITE TO THE FILE AT THE END OF THE LOOP
+with open("Output.html", "w") as text_file:
+    text_file.write("%s" % created)

@@ -1,24 +1,22 @@
 div .answer_label {
     display: inline-block;
     border: 2px solid black;
-    width: 60%;
+    width: 100%;
     border-radius: 1em;
     background-color: #dbdbdb;
     text-indent: 5px;
     padding: .5em;
     margin: .5em;
-}
-
-
-label {
-     vertical-align: middle;    
+    
 }
 
 div .text {
     border: .2em solid grey;
     margin-bottom: 2em;
 }
-
+div .answer {
+    border-top: 1px solid grey;
+}
 div .header {
     border-top: .2em solid grey;
     border-right: .2em solid grey;
@@ -28,9 +26,6 @@ div .header {
 
 div .text , div .header {
     padding: 1em;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 span.name.question_name, span.question_points_holder {
@@ -46,8 +41,38 @@ fieldset {
     border: 0;
 }
 
-div.move , div.move ~ a {
+div.move , div.move ~ a, .screenreader-only {
     display: none;
 }
 
+body {
+    margin: 0 auto;
+    width: 50%;
+}
 
+pre {
+    background-color: #dbdbdb;
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    display: block;
+    padding: 9px;
+    margin: 0 0 12px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    margin-top: 0;
+}
+
+label.answer_row {
+    line-height: 1.5;
+    font-size: .875rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: baseline;
+}
+
+* {
+    font-family: sans-serif;
+}
