@@ -1,0 +1,53 @@
+div .answer_label {
+    display: inline-block;
+    border: 2px solid black;
+    width: 60%;
+    border-radius: 1em;
+    background-color: #dbdbdb;
+    text-indent: 5px;
+    padding: .5em;
+    margin: .5em;
+}
+
+
+label {
+     vertical-align: middle;    
+}
+
+div .text {
+    border: .2em solid grey;
+    margin-bottom: 2em;
+}
+
+div .header {
+    border-top: .2em solid grey;
+    border-right: .2em solid grey;
+    border-left: .2em solid grey;
+    background-color: #eaeaea;
+}
+
+div .text , div .header {
+    padding: 1em;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+span.name.question_name, span.question_points_holder {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+span.question_points_holder {
+    float: right;
+}
+
+fieldset {
+    border: 0;
+}
+
+div.move , div.move ~ a {
+    display: none;
+}
+
+
