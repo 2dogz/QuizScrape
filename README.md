@@ -14,7 +14,7 @@ python -m pip install --upgrade pip
 python -m pip install --upgrade bs4
 ```
 
-Find The cookies you need in chrome -> right click -> inspect -> application -> storage -> cookies\
+Find The cookies you need in chrome -> right click -> inspect -> application -> storage -> cookies
 
 Find The cookies you need in firefox -> right click -> inspect element -> storage -> cookies
 
